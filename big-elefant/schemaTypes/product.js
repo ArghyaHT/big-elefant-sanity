@@ -163,11 +163,35 @@ export default {
             type: 'number',
             validation: Rule => Rule.min(0).error('Price must be positive'),
         },
+          {
+            name: 'stockpack6',
+            title: 'Stock for Pack of 6',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Stock must be positive'),
+        },
+           {
+            name: 'deliveryChargespack6',
+            title: 'Delivery Charges for Pack of 6',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Delevery Charges must be positive'),
+        },
         {
             name: 'pricePack12',
             title: 'Price for Pack of 12',
             type: 'number',
             validation: Rule => Rule.min(0).error('Price must be positive'),
+        },
+         {
+            name: 'stockpack12',
+            title: 'Stock for Pack of 12',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Stock must be positive'),
+        },
+          {
+            name: 'deliveryChargespack12',
+            title: 'Delivery Charges for Pack of 12',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Delevery Charges must be positive'),
         },
         {
             name: 'longDescription',
