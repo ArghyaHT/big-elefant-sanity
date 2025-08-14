@@ -158,8 +158,38 @@ export default {
 
         },
         {
+            name: 'mrpOf4',
+            title: 'Marked price for Pack of 4',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Price must be positive'),
+        },
+         {
+            name: 'pricePack4',
+            title: 'Selling price for Pack of 4',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Price must be positive'),
+        },
+          {
+            name: 'stockpack4',
+            title: 'Stock for Pack of 4',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Stock must be positive'),
+        },
+           {
+            name: 'deliveryChargespack4',
+            title: 'Delivery Charges for Pack of 4',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Delevery Charges must be positive'),
+        },
+           {
+            name: 'mrpOf6',
+            title: 'Marked price for Pack of 6',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Price must be positive'),
+        },
+        {
             name: 'pricePack6',
-            title: 'Price for Pack of 6',
+            title: 'Selling price for Pack of 6',
             type: 'number',
             validation: Rule => Rule.min(0).error('Price must be positive'),
         },
@@ -175,9 +205,15 @@ export default {
             type: 'number',
             validation: Rule => Rule.min(0).error('Delevery Charges must be positive'),
         },
+           {
+            name: 'mrpOf12',
+            title: 'Marked price for Pack of 12',
+            type: 'number',
+            validation: Rule => Rule.min(0).error('Price must be positive'),
+        },
         {
             name: 'pricePack12',
-            title: 'Price for Pack of 12',
+            title: 'Selling Price for Pack of 12',
             type: 'number',
             validation: Rule => Rule.min(0).error('Price must be positive'),
         },
