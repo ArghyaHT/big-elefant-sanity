@@ -9,7 +9,7 @@ export default defineConfig({
   name: 'default',
   title: 'big-elefant',
 
-  projectId: 'tqr4enjo',
+  projectId: 'sutdqaze',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool(), colorInput(),],
