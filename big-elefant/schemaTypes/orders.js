@@ -35,6 +35,12 @@ export default {
             type: 'string',
             fieldset: 'orderDetails',
         },
+        {
+            name: 'totalPrice',
+            title: 'Total Price',
+            type: 'number',
+            fieldset: 'orderDetails',
+        },
 
           // Cart Items (Array of Products)
         {
