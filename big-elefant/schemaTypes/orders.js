@@ -8,7 +8,7 @@ export default {
             title: 'Shipping Details',
             options: { collapsible: true, collapsed: false }, // Optional
         },
-         {
+        {
             name: 'orderDetails',
             title: 'Order Details',
             options: { collapsible: true, collapsed: false },
@@ -23,16 +23,34 @@ export default {
             type: 'string',
             fieldset: 'orderDetails',
         },
-         {
+        {
             name: 'paymentId',
             title: 'Payment Id',
             type: 'string',
             fieldset: 'orderDetails',
         },
-         {
+        {
             name: 'status',
             title: 'Status',
             type: 'string',
+            fieldset: 'orderDetails',
+        },
+        {
+            name: 'subtotalPrice',
+            title: 'Subtotal Price',
+            type: 'number',
+            fieldset: 'orderDetails',
+        },
+        {
+            name: 'deliveryCharges',
+            title: 'Delivery Charges',
+            type: 'number',
+            fieldset: 'orderDetails',
+        },
+        {
+            name: 'discountCharges',
+            title: 'Discount Charges',
+            type: 'number',
             fieldset: 'orderDetails',
         },
         {
@@ -42,7 +60,14 @@ export default {
             fieldset: 'orderDetails',
         },
 
-          // Cart Items (Array of Products)
+          {
+            name: 'paymentMode',
+            title: 'Payment Mode',
+            type: 'string',
+            fieldset: 'orderDetails',
+        },
+
+        // Cart Items (Array of Products)
         {
             name: 'products',
             title: 'Products',
@@ -52,11 +77,11 @@ export default {
                     type: 'object',
                     fields: [
                         { name: 'id', title: 'Product ID', type: 'string', },
-                        { name: 'name', title: 'Product Name', type: 'string',},
-                        { name: 'price', title: 'Price', type: 'number',  },
+                        { name: 'name', title: 'Product Name', type: 'string', },
+                        { name: 'price', title: 'Price', type: 'number', },
                         { name: 'quantity', title: 'Quantity', type: 'number', },
                         { name: 'packSize', title: 'Pack Size', type: 'number', },
-                        { name: 'currency', title: 'Currency', type: 'string',},
+                        { name: 'currency', title: 'Currency', type: 'string', },
                         {
                             name: 'productImage',
                             title: 'Product Image',
@@ -134,7 +159,7 @@ export default {
             fieldset: 'shippingDetails',
 
         },
-      // Submission Time
+        // Submission Time
         {
             name: 'submittedAt',
             title: 'Submitted At',
