@@ -31,6 +31,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'otp',
+      title: 'OTP',
+      type: 'string',
+    },
+    {
       name: 'addresses',
       title: 'Addresses',
       type: 'array',
@@ -54,8 +59,13 @@ export default {
               type: 'string',
             },
             {
-              name: 'addressLine',
-              title: 'Address Line',
+              name: 'addressLine1',
+              title: 'Address Line 1',
+              type: 'string',
+            },
+             {
+              name: 'addressLine2',
+              title: 'Address Line 2',
               type: 'string',
             },
             {

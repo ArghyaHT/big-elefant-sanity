@@ -118,8 +118,15 @@ export default {
 
         // Address Details
         {
-            name: 'addressLine',
-            title: 'Address Line',
+            name: 'addressLine1',
+            title: 'Address Line 1',
+            type: 'string',
+            fieldset: 'shippingDetails',
+
+        },
+         {
+            name: 'addressLine2',
+            title: 'Address Line 2',
             type: 'string',
             fieldset: 'shippingDetails',
 
