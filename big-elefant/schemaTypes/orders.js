@@ -60,7 +60,7 @@ export default {
             fieldset: 'orderDetails',
         },
 
-          {
+        {
             name: 'paymentMode',
             title: 'Payment Mode',
             type: 'string',
@@ -68,29 +68,75 @@ export default {
         },
 
         // Cart Items (Array of Products)
+        // {
+        //     name: 'products',
+        //     title: 'Products',
+        //     type: 'array',
+        //     of: [
+        //         {
+        //             type: 'object',
+        //             fields: [
+        //                 { name: 'id', title: 'Product ID', type: 'string', },
+        //                 { name: 'name', title: 'Product Name', type: 'string', },
+        //                 { name: 'price', title: 'Price', type: 'number', },
+        //                 { name: 'quantity', title: 'Quantity', type: 'number', },
+        //                 { name: 'packSize', title: 'Pack Size', type: 'number', },
+        //                 { name: 'currency', title: 'Currency', type: 'string', },
+        //                 {
+        //                     name: 'productImage',
+        //                     title: 'Product Image',
+        //                     type: 'url',
+        //                 },
+        //             ],
+        //         },
+        //     ],
+        // },
         {
             name: 'products',
             title: 'Products',
             type: 'array',
             of: [
+                // Beverages
                 {
                     type: 'object',
+                    name: 'beverage',
+                    title: 'Beverage',
                     fields: [
-                        { name: 'id', title: 'Product ID', type: 'string', },
-                        { name: 'name', title: 'Product Name', type: 'string', },
-                        { name: 'price', title: 'Price', type: 'number', },
-                        { name: 'quantity', title: 'Quantity', type: 'number', },
-                        { name: 'packSize', title: 'Pack Size', type: 'number', },
-                        { name: 'currency', title: 'Currency', type: 'string', },
-                        {
-                            name: 'productImage',
-                            title: 'Product Image',
-                            type: 'url',
-                        },
+                        { name: 'id', title: 'Product ID', type: 'string' },
+                        { name: 'name', title: 'Product Name', type: 'string' },
+                        { name: 'price', title: 'Price', type: 'number' },
+                        { name: 'quantity', title: 'Quantity', type: 'number' },
+                        { name: 'packSize', title: 'Pack Size', type: 'number' },
+                        { name: 'currency', title: 'Currency', type: 'string' },
+                        { name: 'productImage', title: 'Product Image', type: 'url' },
+                    ],
+                    preview: {
+                        select: {
+                            title: 'merchName',  // Show only the merch name
+                        }
+                    }
+                },
+
+                // Merchandise
+                {
+                    type: 'object',
+                    name: 'merch',
+                    title: 'Merch',
+                    fields: [
+                        { name: 'id', title: 'Product ID', type: 'string' },
+                        { name: 'merchName', title: 'Merch Name', type: 'string' },
+                        { name: 'price', title: 'Price', type: 'number' },
+                        { name: 'quantity', title: 'Quantity', type: 'number' },
+                        { name: 'currency', title: 'Currency', type: 'string' },
+                        { name: 'selectedSize', title: 'Selected Size', type: 'string' },
+                        { name: 'selectedColor', title: 'Selected Color', type: 'string' },
+                        { name: 'productImage', title: 'Product Image', type: 'url' },
                     ],
                 },
             ],
         },
+
+
         // Customer Information
         {
             name: 'name',
@@ -124,7 +170,7 @@ export default {
             fieldset: 'shippingDetails',
 
         },
-         {
+        {
             name: 'addressLine2',
             title: 'Address Line 2',
             type: 'string',
