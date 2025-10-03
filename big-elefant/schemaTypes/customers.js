@@ -33,7 +33,7 @@ export default {
     {
       name: 'otp',
       title: 'OTP',
-      type: 'string',
+      type: 'number',
     },
     {
       name: 'addresses',
