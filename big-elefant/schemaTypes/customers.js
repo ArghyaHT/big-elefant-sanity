@@ -6,15 +6,15 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'firstName',
-      title: 'First Name',
+      name: 'fullName',
+      title: 'Full Name',
       type: 'string',
     },
-    {
-      name: 'lastName',
-      title: 'Last Name',
-      type: 'string',
-    },
+    // {
+    //   name: 'lastName',
+    //   title: 'Last Name',
+    //   type: 'string',
+    // },
     {
       name: 'email',
       title: 'Email',
@@ -44,15 +44,15 @@ export default {
           type: 'object',
           fields: [
             {
-              name: 'firstName',
-              title: 'First Name',
+              name: 'fullName',
+              title: 'Full Name',
               type: 'string',
             },
-            {
-              name: 'lastName',
-              title: 'Last Name',
-              type: 'string',
-            },
+            // {
+            //   name: 'lastName',
+            //   title: 'Last Name',
+            //   type: 'string',
+            // },
             {
               name: 'phoneNumber',
               title: 'Phone Number',
@@ -63,7 +63,7 @@ export default {
               title: 'Address Line 1',
               type: 'string',
             },
-             {
+            {
               name: 'addressLine2',
               title: 'Address Line 2',
               type: 'string',

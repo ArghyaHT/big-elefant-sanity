@@ -145,14 +145,14 @@ export default {
             validation: Rule => Rule.required().error('First name is required'),
             fieldset: 'shippingDetails',
         },
-        {
-            name: 'email',
-            title: 'Email',
-            type: 'string',
-            validation: Rule => Rule.required().email().error('Valid email is required'),
-            fieldset: 'shippingDetails',
+        // {
+        //     name: 'email',
+        //     title: 'Email',
+        //     type: 'string',
+        //     validation: Rule => Rule.required().email().error('Valid email is required'),
+        //     fieldset: 'shippingDetails',
 
-        },
+        // },
         {
             name: 'contact',
             title: 'Phone Number',
@@ -165,35 +165,42 @@ export default {
         // Address Details
         {
             name: 'addressLine1',
-            title: 'Address Line 1',
+            title: 'Flat, House Number',
             type: 'string',
             fieldset: 'shippingDetails',
 
         },
         {
             name: 'addressLine2',
-            title: 'Address Line 2',
+            title: 'Apartment, Area, Sector, Village',
             type: 'string',
             fieldset: 'shippingDetails',
 
         },
-        {
-            name: 'locality',
-            title: 'Locality',
-            type: 'string',
-            fieldset: 'shippingDetails',
+        // {
+        //     name: 'locality',
+        //     title: 'Locality',
+        //     type: 'string',
+        //     fieldset: 'shippingDetails',
 
-        },
-        {
-            name: 'landmark',
-            title: 'Landmark',
-            type: 'string',
+        // },
+        // {
+        //     name: 'landmark',
+        //     title: 'Landmark',
+        //     type: 'string',
+        //     fieldset: 'shippingDetails',
+
+        // },
+         {
+            name: 'pin',
+            title: 'PIN Code',
+            type: 'number',
             fieldset: 'shippingDetails',
 
         },
         {
             name: 'city',
-            title: 'City',
+            title: 'City/ District / Town',
             type: 'string',
             fieldset: 'shippingDetails',
 
@@ -205,13 +212,7 @@ export default {
             fieldset: 'shippingDetails',
 
         },
-        {
-            name: 'pin',
-            title: 'Pin Code',
-            type: 'number',
-            fieldset: 'shippingDetails',
-
-        },
+       
         // Submission Time
         {
             name: 'submittedAt',
