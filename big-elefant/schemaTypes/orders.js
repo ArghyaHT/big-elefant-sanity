@@ -112,7 +112,8 @@ export default {
                     ],
                     preview: {
                         select: {
-                            title: 'merchName',  // Show only the merch name
+                            title: 'name', // ✅ Correct field for beverage
+                            media: 'productImage', // optional, shows image in preview
                         }
                     }
                 },
@@ -132,6 +133,12 @@ export default {
                         { name: 'selectedColor', title: 'Selected Color', type: 'string' },
                         { name: 'productImage', title: 'Product Image', type: 'url' },
                     ],
+                    preview: {
+                        select: {
+                            title: 'merchName', // ✅ Correct field for merch
+                            media: 'productImage', // optional
+                        }
+                    }
                 },
             ],
         },
@@ -191,7 +198,7 @@ export default {
         //     fieldset: 'shippingDetails',
 
         // },
-         {
+        {
             name: 'pin',
             title: 'PIN Code',
             type: 'number',
@@ -212,7 +219,7 @@ export default {
             fieldset: 'shippingDetails',
 
         },
-       
+
         // Submission Time
         {
             name: 'submittedAt',
