@@ -113,7 +113,6 @@ export default {
                     preview: {
                         select: {
                             title: 'name', // ✅ Correct field for beverage
-                            media: 'productImage', // optional, shows image in preview
                         }
                     }
                 },
@@ -136,7 +135,6 @@ export default {
                     preview: {
                         select: {
                             title: 'merchName', // ✅ Correct field for merch
-                            media: 'productImage', // optional
                         }
                     }
                 },
