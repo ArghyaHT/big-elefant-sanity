@@ -4,16 +4,16 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'firstName',
-      title: 'First Name',
+      name: 'fullName',
+      title: 'Full Name',
       type: 'string',
       validation: Rule => Rule.required().error('First name is required'),
     },
-    {
-      name: 'lastName',
-      title: 'Last Name',
-      type: 'string',
-    },
+    // {
+    //   name: 'lastName',
+    //   title: 'Last Name',
+    //   type: 'string',
+    // },
     {
       name: 'email',
       title: 'Email',
